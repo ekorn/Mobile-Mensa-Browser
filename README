@@ -1,0 +1,6 @@
+A Browser for the Mensa of the Universtíty of Paderborn (UPB)
+it use: 
+  - Jquery Mobile, 
+  - the mobile boilerplate template,
+  - YQL to transform the xml files into json and to get them.
+
