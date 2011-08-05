@@ -1,0 +1,167 @@
+﻿<!doctype html>
+
+
+<!--[if IEMobile 7 ]><html class="no-js iem7" manifest="default.appcache"><![endif]-->
+<!--[if (gt IEMobile 7)|!(IEMobile)]><!--> <html class=no-js manifest="default.appcache"> <!--<![endif]-->
+
+<head>
+  <meta charset=utf-8>
+
+  <title></title>
+  <meta name=description content="Mobile Mensa Browser">
+  <meta name=author content="Nicolas Lehmann">
+  
+  
+  <meta name=HandheldFriendly content=True>
+  <meta name=MobileOptimized content=320 />
+  <meta name=viewport content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel=apple-touch-icon-precomposed sizes=114x114 href="img/h/apple-touch-icon.png">
+  
+  <link rel=apple-touch-icon-precomposed sizes=72x72 href="img/m/apple-touch-icon.png">
+  
+  <link rel=apple-touch-icon-precomposed href="img/l/apple-touch-icon-precomposed.png">
+  
+  <link rel="shortcut icon" href="img/l/apple-touch-icon.png">
+  
+  
+  
+  
+  
+  <meta http-equiv=cleartype content=on>
+	
+	
+  
+  
+  <link rel=stylesheet href="css/jquery.mobile-1.0b1.min.css" type="text/css" media=screen charset=utf-8 /> 
+  <link rel=stylesheet href="css/style-0008.min.css">
+  
+  <script src="js/libs/modernizr-custom.js"></script>
+</head>
+
+<body>
+
+<div data-role=page id=welcomePage>
+
+	<div data-role=header>
+		<div><center><h2>Mobile Mensa Plan</h2></center></div>
+	</div>
+
+	<div data-role=content>	
+    <div data-role=fieldcontain id=downloadSliderBox>
+	    <label for=downloadSlider>Dowload der Pläne:</label>
+ 	    <input type=range name=slider id=downloadSlider value=0 min=0 max=4 />
+    </div>
+	</div>
+
+	<div data-role=footer>
+		<center><p>Ein Service der <a href="https://fsmi.uni-paderborn.de/">Fachschaft</a></p></center>
+	</div>
+</div>
+
+<div data-role=page id=mensa>
+
+	<div data-role=header>
+		<div><center><h2>Mobile Mensa Plan</h2></center></div>
+    <div data-role=navbar>
+		  <ul>
+			  <li><a href="#palmengarten">Palmengarten</a></li>
+			  <li><a href="#gownsmenspub">Gownsmens Pub</a></li>
+			  <li><a href="#mensula">Mensula</a></li>
+		  </ul>
+	  </div>
+	</div>
+
+	<div data-role=content>	
+		<div id=weekMensa data-role=collapsible-set>
+	</div>
+	</div>
+
+	<div data-role=footer>
+  <center><p>Ein Service der <a href="https://fsmi.uni-paderborn.de/">Fachschaft</a></p></center>
+	</div>
+	
+</div>
+
+<div data-role=page id=palmengarten>
+
+	<div data-role=header>
+		<div><center><h2>Mobile Palmengarten Plan</h2></center></div>
+    <div data-role=navbar>
+		  <ul>
+			  <li><a href="#mensa">Mensa</a></li>
+			  <li><a href="#gownsmenspub">Gownsmens Pub</a></li>
+			  <li><a href="#mensula">Mensula</a></li>
+		  </ul>
+	  </div>
+	</div>
+
+	<div data-role=content>	
+		<div id=weekPalmengarten data-role=collapsible-set>
+	</div>
+	</div>
+
+	<div data-role=footer>
+  <center><p>Ein Service der <a href="https://fsmi.uni-paderborn.de/">Fachschaft</a></p></center>
+	</div>
+</div>
+
+<div data-role=page id=gownsmenspub>
+
+	<div data-role=header>
+		<div><center><h2>Mobile Gownsmens Pub Plan</h2></center></div>
+    <div data-role=navbar>
+		  <ul>
+			  <li><a href="#mensa">Mensa</a></li>
+			  <li><a href="#palmengarten">Palmengarten</a></li>
+			  <li><a href="#mensula">Mensula</a></li>
+		  </ul>
+	  </div>
+	</div>
+
+	<div data-role=content>	
+		<div id=weekGownsmenspub data-role=collapsible-set>
+	</div>
+	</div>
+
+	<div data-role=footer>
+  <center><p>Ein Service der <a href="https://fsmi.uni-paderborn.de/">Fachschaft</a></p></center>
+	</div>
+</div>
+
+<div data-role=page id=mensula>
+
+	<div data-role=header>
+		<div><center><h2>Mobile Mensula Plan</h2></center></div>
+    <div data-role=navbar>
+		  <ul>
+			  <li><a href="#mensa">Mensa</a></li>
+			  <li><a href="#palmengarten">Palmengarten</a></li>
+			  <li><a href="#gownsmenspub">Gownsmens Pub</a></li>
+		  </ul>
+	  </div>
+	</div>
+
+	<div data-role=content>	
+		<div id=weekMensula>
+	</div>
+	</div>
+
+	<div data-role=footer>
+  <center><p>Ein Service der <a href="https://fsmi.uni-paderborn.de/">Fachschaft</a></p></center>
+	</div>
+</div>
+
+
+  
+
+<script type="text/javascript" src="js/libs/jquery-1.6.1.min.js"></script>
+
+
+  <script src='js/scripts-0008.min.js'></script>
+  
+  <script>MBP.scaleFix();yepnope({test:Modernizr.mq("(min-width)"),nope:["js/libs/respond.min.js"]});</script>
+</body>
+</html>
