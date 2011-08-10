@@ -15,7 +15,7 @@ $(document).ready(function() {
         setPlan(data, $('#weekMensa'));
         updateSlider();
       } catch(e){
-        /*console.log("error",e)*/;
+        log("error",e);
         $('#weekPalmengarten').append('<center><h3>'+errorString+'</h3></center>');
         updateSlider();
       }
@@ -29,7 +29,7 @@ $(document).ready(function() {
         setPlan(data, $('#weekPalmengarten'));
         updateSlider();
       } catch(e){
-        /*console.log("error",e)*/;
+        log("error",e);
         $('#weekPalmengarten').append('<center><h3>'+errorString+'</h3></center>');
         updateSlider();
       }
@@ -42,7 +42,7 @@ $(document).ready(function() {
         setPlan(data, $('#weekGownsmenspub'));
         updateSlider();
       } catch(e){
-        /*console.log("error",e)*/;
+        log("error",e);
         $('#weekGownsmenspub').append('<center><h3>'+errorString+'</h3></center>');
         updateSlider();
       }
@@ -53,7 +53,7 @@ $(document).ready(function() {
     function(data) {
       try{
         data = data.query.results.plan;
-        ///*console.log(data)*/;
+        //log(data);
         var menueList='<center><h3>'+data.tag[0].wochentag+' ('+data.tag[0].datum+')</h3></center><ul data-role="listview" data-inset="true">';
         
         //Vorspeise
@@ -72,7 +72,7 @@ $(document).ready(function() {
         $('#weekMensula').append(menueList);
         updateSlider();
       } catch(e){
-        /*console.log("error",e)*/;
+        log("error",e);
         $('#weekMensula').append('<center><h3>'+errorString+'</h3></center>');
         updateSlider();
       }
